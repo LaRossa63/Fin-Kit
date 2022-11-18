@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
-import { Background, Header, HeaderImage, Title } from 'components/Elements';
+import {
+  Background,
+  Header,
+  HeaderImage,
+  Settings,
+  Title,
+} from 'components/Elements';
 
 const Container = styled.div`
   width: 100%;
-  max-width: 1024px;
+  max-width: 1124px;
 
   height: 100%;
 
@@ -24,6 +30,7 @@ export const TabletAndDesktopPage = () => {
         <Header />
         <HeaderImage />
         <Title />
+        <Settings />
       </Container>
     </>
   );

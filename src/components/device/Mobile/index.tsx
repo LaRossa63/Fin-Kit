@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-import { Background, Header, HeaderImage, Title } from 'components/Elements';
+import {
+  Background,
+  Header,
+  HeaderImage,
+  Settings,
+  Title,
+} from 'components/Elements';
 
 const Container = styled.div`
   position: relative;
@@ -18,6 +24,7 @@ export const MobilePage = () => {
         <Header />
         <HeaderImage />
         <Title />
+        <Settings />
       </Container>
     </>
   );
