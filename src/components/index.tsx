@@ -1,15 +1,17 @@
 import { useGetDevice } from 'hooks';
+import { MobilePage } from './device/Mobile';
+import { TabletAndDesktopPage } from './device/TabletAndDesktop';
 
 export const AppContent = () => {
-  const { isMobile, isTabletAndDesktop } = useGetDevice();
+  const { isMobile, isTabletAndDesktop, currentDevice } = useGetDevice();
 
   if (isMobile) {
-    return <h1>Mobile</h1>;
+    return <MobilePage />;
   }
 
   if (isTabletAndDesktop) {
-    return <h1>isTabletAndDesktop</h1>;
+    return <TabletAndDesktopPage />;
   }
 
-  return <>Not find pages</>;
+  return <>Not find page</>;
 };

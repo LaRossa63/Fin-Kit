@@ -26,5 +26,12 @@ declare module 'styled-components' {
       fontWeightMedium: string;
       fontWeightBold: string;
     };
+
+    device: {
+      name: {
+        mobile: string;
+        TabletAndDesktop: string;
+      };
+    };
   }
 }

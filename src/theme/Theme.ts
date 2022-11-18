@@ -25,4 +25,11 @@ export const Theme: DefaultTheme = {
     fontWeightMedium: '500',
     fontWeightBold: '700',
   },
+
+  device: {
+    name: {
+      mobile: 'Mobile',
+      TabletAndDesktop: 'TabletAndDesktop',
+    },
+  },
 };
