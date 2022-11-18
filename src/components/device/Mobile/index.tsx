@@ -5,7 +5,9 @@ import {
   Header,
   HeaderImage,
   Settings,
+  Slider,
   Title,
+  TitleContent,
 } from 'components/Elements';
 
 const Container = styled.div`
@@ -25,6 +27,9 @@ export const MobilePage = () => {
         <HeaderImage />
         <Title />
         <Settings />
+
+        <TitleContent />
+        <Slider />
       </Container>
     </>
   );

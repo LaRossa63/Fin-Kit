@@ -48,7 +48,7 @@ export const HeaderImage = () => {
   return (
     <ContainerImage device={currentDevice}>
       <Image
-        src="./images/Header-TabletAndDesktop.png"
+        src="./images/Header.png"
         alt="Header image"
         device={currentDevice}
       />
