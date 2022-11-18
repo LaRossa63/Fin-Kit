@@ -3,5 +3,5 @@ export * from './Background';
 export * from './HeaderImage';
 export * from './Title';
 export * from './Settings';
-export * from './TitleContent';
-export * from './Slider';
+export * from './Products';
+export * from './Investment';

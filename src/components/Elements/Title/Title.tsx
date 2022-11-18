@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import { TitleIcon } from 'images';
+import { TitleIcon } from 'images/Settings';
 import { useGetDevice } from 'hooks';
 
 const Container = styled.div<{ device: string }>`

@@ -4,10 +4,10 @@ import {
   Background,
   Header,
   HeaderImage,
+  Investment,
   Settings,
-  Slider,
+  Products,
   Title,
-  TitleContent,
 } from 'components/Elements';
 
 const Container = styled.div`
@@ -20,6 +20,7 @@ const Container = styled.div`
   z-index: 10;
 
   margin: 0 auto;
+  margin-bottom: 100px;
   padding: 0 20px;
 `;
 
@@ -34,8 +35,8 @@ export const TabletAndDesktopPage = () => {
         <Title />
         <Settings />
 
-        <TitleContent />
-        <Slider />
+        <Products />
+        <Investment />
       </Container>
     </>
   );

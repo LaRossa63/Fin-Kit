@@ -3,16 +3,19 @@ import styled, { css } from 'styled-components';
 
 import { useGetDevice } from 'hooks';
 
-const Container = styled.div`
-  margin-top: 24px;
-`;
-
-const List = styled.ul`
+const List = styled.ul<{ device: string }>`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
+  margin-top: 24px;
   gap: 16px;
+
+  ${(props) =>
+    props.device === props.theme.device.name.TabletAndDesktop &&
+    css`
+      margin-top: 44px;
+    `}
 `;
 
 const ListItem = styled.li<{ device: string }>`
@@ -103,8 +106,8 @@ export const Slider = () => {
   const { currentDevice } = useGetDevice();
 
   return (
-    <Container>
-      <List>
+    <>
+      <List device={currentDevice}>
         <ListItem device={currentDevice}>
           <ContainerText device={currentDevice}>
             <Title device={currentDevice}>Платформа для автоследования</Title>
@@ -135,6 +138,6 @@ export const Slider = () => {
           />
         </ListItem>
       </List>
-    </Container>
+    </>
   );
 };
